@@ -1,0 +1,7 @@
+0 exit
+1 next
+2 pause
+3 play
+4 previous
+5 volume_down
+6 volume_up

@@ -1,0 +1,9 @@
+{
+    "play": "play",
+    "pause": "pause",
+    "volume_up": "volume_up",
+    "volume_down": "volume_down",
+    "next": "next",
+    "previous": "previous",
+    "exit": "exit"
+}
