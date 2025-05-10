@@ -25,3 +25,10 @@ A smart media player application that uses **hand gestures** to control video pl
 - VLC (for media backend)
 - TensorFlow/Keras (optional: custom CNN gesture model)
 
+
+## 🖥️ Requirements
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt
