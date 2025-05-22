@@ -1,6 +1,6 @@
 # 🖐️ Gesture-Controlled Media Player 🎬
 
-A smart media player application that uses **hand gestures** to control video playback. Built with **OpenCV**, **MediaPipe**, **PyQt5**, and **VLC**, it enables intuitive control without touching your keyboard or mouse.
+A smart media player application that uses **hand gestures** to control video playback. Built with **OpenCV**, **MediaPipe**, **PyQt5**, and **VLC**, it enables intuitive control without touching your keyboard or mouse
 
 ## 🎯 Features
 
