@@ -54,7 +54,7 @@ while True:
         break
 
     frame = cv2.flip(frame, 1)
-    roi = frame[100:300, 100:300]
+    roi = frame[100:300, 100:300] #for focused area 
     
     roi = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
     roi = cv2.resize(roi, (img_size, img_size)) / 255.0
@@ -73,7 +73,7 @@ while True:
 
     cv2.imshow("Gesture Control", frame)
 
-   
+   # we get effrect when sign match 70%
     if confidence > 0.70 and (time.time() - last_action_time) > cooldown:
         if gesture in gesture_actions:
             action = gesture_actions[gesture]
