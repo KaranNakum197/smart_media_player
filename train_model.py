@@ -37,11 +37,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Define CNN model
 model = Sequential([
-    Conv2D(32, (3,3), activation='relu', input_shape=(img_size, img_size, 3)),
+    Conv2D(32, (3,3), activation='relu', input_shape=(img_size, img_size, 3)),# making them small with convo
     MaxPooling2D((2,2)),
     Conv2D(64, (3,3), activation='relu'),
     MaxPooling2D((2,2)),
-    Flatten(),
+    Flatten(), # make it flate form the 2d image 
     Dense(128, activation='relu'),
     Dropout(0.3),
     Dense(len(labels), activation='softmax')
