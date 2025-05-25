@@ -27,7 +27,7 @@ class GestureApp:
         filepath = filedialog.askopenfilename(filetypes=[("Video files", "*.mp4 *.mkv")])
         if filepath:
             self.video_path.set(filepath)
-            video_dest = os.path.join("media", "your_video.mp4")
+            video_dest = os.path.join("media", "your_video.mp4")#for path to save in your folder
             shutil.copy(filepath, video_dest)
             self.status_label.config(text="Selected video copied to media/", fg="blue")
 
