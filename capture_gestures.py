@@ -20,7 +20,7 @@ def collect_images(gesture_name):
         ret, frame = cap.read()
         if not ret:
             break
-
+        #for the camera capture box
         frame = cv2.flip(frame, 1)
         cv2.rectangle(frame, (50, 50), (250, 250), (0, 255, 0), 2)
         cv2.putText(frame, f"{gesture_name}: {count}/{num_samples}", (50, 40),
@@ -28,7 +28,7 @@ def collect_images(gesture_name):
         cv2.imshow("Capture Gesture", frame)
 
         key = cv2.waitKey(1)
-        if key == ord('s'):
+        if key == ord('s'):# for save image
             roi = frame[50:250, 50:250]
             cv2.imwrite(f"{gesture_path}/{count}.jpg", roi)
             count += 1
