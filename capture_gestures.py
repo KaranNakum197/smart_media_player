@@ -6,7 +6,7 @@ gestures = ["play", "pause", "volume_up", "volume_down", "previous", "next", "ex
 save_dir = "gestures/data"
 num_samples = 300  # images per gesture
 
-os.makedirs(save_dir, exist_ok=True)
+os.makedirs(save_dir, exist_ok=True)# if not make directory
 
 def collect_images(gesture_name):
     cap = cv2.VideoCapture(0)
