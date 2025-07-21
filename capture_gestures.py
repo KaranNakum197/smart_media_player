@@ -32,7 +32,7 @@ def collect_images(gesture_name):
             roi = frame[50:250, 50:250]
             cv2.imwrite(f"{gesture_path}/{count}.jpg", roi)
             count += 1
-        elif key == ord('q') or count >= num_samples:# quit after data collwction is done
+        elif key == ord('q') or count >= num_samples:# quit after data collection is done
             break
 
     cap.release()
